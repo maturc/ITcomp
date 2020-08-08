@@ -3,7 +3,7 @@ import React from 'react';
 function Banner() {
   return (
     <div className="banner">
-      Bannersss
+      <img src="https://i.imgur.com/OFd6cdc.jpg" alt="" className="banner__image" />
     </div>
   );
 }

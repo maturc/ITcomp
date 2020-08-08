@@ -1,4 +1,7 @@
 .navbar {
+  position: fixed;
+  left: 0;
+  right: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -67,9 +70,9 @@
           transition-timing-function: ease-in;
 }
 
-.banner {
+.banner__image {
   width: 100%;
-  background-image: url(https://i.imgur.com/OFd6cdc.jpg);
+  max-height: 100vh;
 }
 
 .footer {
