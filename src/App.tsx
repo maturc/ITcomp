@@ -4,11 +4,14 @@ import Navbar from './components/Navbar';
 import Home from './components/Home';
 import About from './components/About';
 import Portfolio from './components/Portfolio';
+import Footer from './components/Footer';
 import './App.css';
+import { CssBaseline } from '@material-ui/core';
 
 function App() {
   return (
     <Router>
+      <CssBaseline />
       <div className="App">
         <Navbar />
         <Switch>
@@ -16,6 +19,7 @@ function App() {
           <Route path="/about"     exact component={About} />
           <Route path="/portfolio" exact component={Portfolio} />
         </Switch>
+        <Footer />
       </div>
     </Router>
   );
