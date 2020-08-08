@@ -1,16 +1,79 @@
+$nav-bg-color: rgb(43, 44, 54)
 .navbar
   display: flex
   justify-content: space-around
   align-items: center
   min-height: 10vh
-  background-color: rgb(73, 79, 82)
+  background-color: $nav-bg-color
   color: white
+  z-index: 999
   &__links
     width: 33%
     display: flex
     justify-content: space-around
     align-items: center
+    flex-wrap: wrap
     list-style: none
     & > *
       color: white
       text-decoration: none
+    &-aside
+      display: fixed
+  &__drawer
+    background-color: $nav-bg-color
+    position: fixed
+    top: 0
+    left: 0
+    right: 0
+    bottom: 0
+    &-enter
+      animation-name: drawer-enter
+      animation-duration: 0.2s
+      transition-timing-function: ease-out;
+    &-exit
+      animation-name: drawer-exit
+      animation-duration: 0.2s
+      animation-direction: reverse
+      transform: translateX(110%)
+      transition-timing-function: ease-in;
+
+.banner
+  width: 100%
+  background-image: url(https://i.imgur.com/OFd6cdc.jpg)
+
+
+
+
+.footer
+  display: flex
+  justify-content: space-between
+  flex-wrap: wrap
+  align-items: baseline
+  padding: 68px
+  background-color: $nav-bg-color
+  color: white
+  @media only screen and (max-width: 464px)
+    justify-content: center
+  &__links
+    display: flex
+    flex-grow: 1
+    flex-shrink: 0
+    flex-wrap: wrap
+    justify-content: center
+    & > *
+
+  &__credits
+    display: flex
+
+@keyframes drawer-enter
+  0%
+    transform: translateX(110%)
+    //left: 400px
+  100%
+    transform: translateX(0%)
+@keyframes drawer-exit
+  0%
+    transform: translateX(110%)
+    //left: 400px
+  100%
+    transform: translateX(0%)
