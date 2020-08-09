@@ -9,3 +9,7 @@ export type ILearnMore = {
   src: string;
   alt?: string | undefined;
 }
+export type IH4AndP = {
+  header: string;
+  paragraph: string;
+}
