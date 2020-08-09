@@ -43,16 +43,16 @@ $nav-bg-color: rgb(43, 44, 54)
 .banner__image
   width: 100%
   max-height: 100vh
-
-.learn-more
+.container
   width: 60%
   margin: 16px auto
+  @media only screen and (max-width: 600px)
+    width: 100%
+.learn-more
   display: flex
   flex-direction: row
   justify-content: center
   flex-wrap: wrap
-  @media only screen and (max-width: 600px)
-    width: 100%
   &__text
     flex: 1 1
     min-width: 300px
@@ -77,6 +77,11 @@ $nav-bg-color: rgb(43, 44, 54)
       @media only screen and (max-width: 800px)
         min-width: 300px
 
+
+
+
+
+  
 .footer
   display: flex
   justify-content: space-between

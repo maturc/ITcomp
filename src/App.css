@@ -75,9 +75,18 @@
   max-height: 100vh;
 }
 
-.learn-more {
+.container {
   width: 60%;
   margin: 16px auto;
+}
+
+@media only screen and (max-width: 600px) {
+  .container {
+    width: 100%;
+  }
+}
+
+.learn-more {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -90,12 +99,6 @@
           justify-content: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-}
-
-@media only screen and (max-width: 600px) {
-  .learn-more {
-    width: 100%;
-  }
 }
 
 .learn-more__text {
