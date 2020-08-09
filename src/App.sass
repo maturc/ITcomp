@@ -45,31 +45,37 @@ $nav-bg-color: rgb(43, 44, 54)
   max-height: 100vh
 
 .learn-more
+  width: 60%
+  margin: 16px auto
   display: flex
   flex-direction: row
   justify-content: center
   flex-wrap: wrap
+  @media only screen and (max-width: 600px)
+    width: 100%
   &__text
-    display: flex
-    flex-direction: column
-    justify-content: flex-start
     flex: 1 1
     min-width: 300px
-    max-width: 30%
-    margin: 8px
+    max-width: 500px
+    display: flex
+    flex-direction: column
+    flex-wrap: nowrap
+    justify-content: center
+    align-self: center
+    padding: 16px
   &__image
-    max-width: 400px
-    max-height: 400px
+    max-width: 500px
+    max-height: 500px
     flex: 1 1
     &-container
-      flex: 0 1
+      flex: 1 1
       align-self: center
-      margin: 8px
-      @media only screen and (max-width: 500px)
-        display: flex
-        justify-content: center
-        min-width: 200px
-        flex: 1 0
+      min-width: 400px
+      display: flex
+      justify-content: center
+      padding: 16px
+      @media only screen and (max-width: 800px)
+        min-width: 300px
 
 .footer
   display: flex
