@@ -12,11 +12,17 @@ function NavMain( { classProp, setPlayDrawerAnimation }: INav ) {
         <Link to="/" onClick={handleClick}>
           <li>Home</li>
         </Link>
+        <Link to="/portfolio" onClick={handleClick}>
+          <li>Portfolio</li>
+        </Link>
         <Link to="/about" onClick={handleClick}>
           <li>About</li>
         </Link>
-        <Link to="/portfolio" onClick={handleClick}>
-          <li>Portfolio</li>
+        <Link to="/blog" onClick={handleClick}>
+          <li>Blog</li>
+        </Link>
+        <Link to="/contact" onClick={handleClick}>
+          <li>Contact</li>
         </Link>
       </ul>
   );
