@@ -1,7 +1,7 @@
 $nav-bg-color: rgb(43, 44, 54)
 
 @mixin grid-areas
-  > img
+  > a
     &:nth-child(1)
       grid-area: a
     &:nth-child(2)
@@ -12,6 +12,8 @@ $nav-bg-color: rgb(43, 44, 54)
       grid-area: d
     &:nth-child(5)
       grid-area: e
+  .portfolio__button-container
+    grid-area: f
 
 body
   font-family: 'Open Sans', sans-serif
@@ -121,38 +123,49 @@ p
   display: grid
   //grid-template-columns: repeat(auto-fit, minmax(300px, 1fr))
   align-items: stretch
-  grid-template: 300px 300px / 1fr 1fr 1fr
-  grid-template-areas: "a b c" "d e c"
+  grid-template: 300px 300px 1fr / 1fr 1fr 1fr
+  grid-template-areas: "a b c" "d e c" "f f f"
   @media only screen and (max-width: 900px)
     @include grid-areas
-    grid-template: 300px 300px 300px / 1fr 1fr
-    grid-template-areas: "a b" "c d" "c e"
+    grid-template: 300px 300px 300px 1fr / 1fr 1fr
+    grid-template-areas: "a b" "c d" "c e" "f f"
   @media only screen and (max-width: 600px)
     @include grid-areas
     //grid-template: repeat(auto-fit, minmax(300px,1fr))
     grid-template: repeat(6, 300px) / 1fr
-    grid-template-areas: "a" "b" "c" "c" "d" "e"
-  & > img
+    grid-template-areas: "a" "b" "c" "c" "d" "e" "f"
+  & > a
     position: relative
-    object-fit: cover
+    background-size: cover
     width: 100%
     //max-height: 100%
     //height: 200px
     
     &::after
-      content: "test"
+      content: ""
       display: block
       position: absolute
-      top: 0
+      bottom: 0
       left: 0
+      right: 0
       width: 100%
+      height: 0
+      z-index: 10
+      background-color: rgba(0, 0, 0, 0.4)
+      transition: height 0.1s ease-out
+    &:hover::after
       height: 100%
-      z-index: -10
-      background-color: red
-      background-image: linear-gradient(120deg, #eaee44, #33d0ff);
-
-
-
+      content: "Learn more"
+      color: rgba(255, 255, 255, 1)
+      padding: 50px
+      font-size: 2rem
+      text-align: center
+  &__button-container
+    background-color: cadetblue
+    height: 100px
+    display: flex
+    justify-content: center
+    align-items: center
   
   
 //FOOTER
