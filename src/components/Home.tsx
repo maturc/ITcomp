@@ -3,6 +3,7 @@ import Banner from './components-small/Banner';
 import LearnMore from './components-small/LearnMore';
 import WhatWeDo from './components-small/WhatWeDo';
 import Portfolio from './Portfolio';
+import Testimonials from './Testimonials';
 
 function Home() {
   return (
@@ -14,9 +15,7 @@ function Home() {
       </div>
       <Portfolio /  >
       <div className="container">
-        <section>
-          Testimonials
-        </section>
+        <Testimonials />
         <section>
           Blog?
         </section>
