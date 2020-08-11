@@ -167,7 +167,33 @@ p
     justify-content: center
     align-items: center
   
-  
+//TESTIMONIALS
+.testimonials
+  display: flex
+  flex-direction: column
+  justify-content: center
+  &__group
+    display: flex
+    flex-direction: row
+    //flex-wrap: wrap mby just add into media query
+  &__container
+      display: flex
+      flex-direction: column
+      justify-content: center
+  &__user
+    display: flex
+    flex-direction: row
+    justify-content: flex-start
+    &-details
+      display: flex
+      flex-direction: column
+      justify-content: flex-start
+  &__name
+    font-weight: bold
+  &__company
+    font-size: 0.9rem
+    color: #9698a3
+
 //FOOTER
 .footer
   display: flex
