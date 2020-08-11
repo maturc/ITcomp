@@ -13,3 +13,11 @@ export type IH4AndP = {
   header: string;
   paragraph: string;
 }
+export type ITestimonialTemplate = {
+  paragraph: string;
+  user: {
+    image: string;
+    name: string;
+    company: string;
+  }
+}
