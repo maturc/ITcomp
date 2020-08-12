@@ -13,7 +13,7 @@ function Home() {
         <LearnMore header="About Us" paragraph="lorem" button="Learn more" src="https://i.imgur.com/6beh1u3.jpg" alt="placeholder"/>
         <WhatWeDo />
       </div>
-      <Portfolio /  >
+      <Portfolio />
       <div className="container">
         <Testimonials />
         <section>

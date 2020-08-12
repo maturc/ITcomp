@@ -2,8 +2,12 @@ import React from 'react';
 import { render } from '@testing-library/react';
 import App from './App';
 
-test('renders learn react link', () => {
+test('Do all components inside home get rendered?', () => {
   const { getByText } = render(<App />);
-  const linkElement = getByText(/learn react/i);
-  expect(linkElement).toBeInTheDocument();
+  getByText("Home");
+  getByText("About Us");
+  getByText("What We Do");
+  getByText("More projects");
+  getByText("User reviews");
+  getByText("Created by Matija Turčec");
 });
