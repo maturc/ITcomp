@@ -14,8 +14,8 @@ function Home() {
         <WhatWeDo />
       </div>
       <Portfolio />
+      <Testimonials />
       <div className="container">
-        <Testimonials />
         <section>
           Blog?
         </section>

@@ -168,6 +168,20 @@ p
     align-items: center
   
 //TESTIMONIALS
+.testimonials__hide-overflow
+  flex-grow: 1
+  width: auto
+  background-color: white
+  z-index: 10
+  &-container
+    display: flex
+    flex-direction: row
+    flex-wrap: nowrap
+.testimonials__slide-container
+  display: flex
+  flex-direction: row
+  flex-wrap: nowrap
+///////////////
 .testimonials
   display: flex
   flex-direction: column
@@ -176,6 +190,8 @@ p
     display: flex
     flex-direction: row
     //flex-wrap: wrap mby just add into media query
+    width: 100%
+    flex-shrink: 0
   &__container
       display: flex
       flex-direction: column
