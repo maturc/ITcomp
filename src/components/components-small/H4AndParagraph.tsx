@@ -1,7 +1,7 @@
 import React from 'react';
-import { IH4AndP } from '../../interfaces';
+import { IHAndP } from '../../interfaces';
 
-function H4AndParagraph( {header, paragraph}: IH4AndP ) {
+function H4AndParagraph( {header, paragraph}: IHAndP ) {
   if(paragraph==="lorem")
     paragraph = "Lorem, ipsum dolor sit amet consectetur adipisicing elit."
   return (
