@@ -1,9 +1,10 @@
 import React from 'react';
+import banner from '../../assets/banner-main-smaller.jpg'
 
 function Banner() {
   return (
     <div className="banner">
-      <img src="https://i.imgur.com/OFd6cdc.jpg" alt="" className="banner__image" />
+      <img src={banner} alt="banner image" className="banner__image" />
     </div>
   );
 }
