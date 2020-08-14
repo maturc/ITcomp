@@ -1,29 +1,28 @@
-import React, { useState, useEffect, ReactElement } from 'react';
+import React, { useState, useEffect } from 'react';
 import TestimonialTemplate from './components-small/TestimonialTemplate';
 import { Button } from '@material-ui/core';
-import { ActionTranslate } from 'material-ui/svg-icons';
 
 function Testimonials() {
   const [sliderIndex, setSliderIndex] = useState(0);
   const slides = [
     <>
       <TestimonialTemplate paragraph="lorem" user={ {image: "", name: "Ivan", company: "Abc"} } />
-      <TestimonialTemplate paragraph="lorem" user={ {image: "", name: "Ivan", company: "Abc"} } />
+      <TestimonialTemplate paragraph="lorem" user={ {image: "", name: "Tomislav", company: "Company A"} } />
     </>
     ,
     <>
-      <TestimonialTemplate paragraph="lorem" user={ {image: "", name: "Marko", company: "Abc"} } />
-      <TestimonialTemplate paragraph="lorem" user={ {image: "", name: "Marko", company: "Abc"} } />
+      <TestimonialTemplate paragraph="lorem" user={ {image: "", name: "Marko", company: "Company B"} } />
+      <TestimonialTemplate paragraph="lorem" user={ {image: "", name: "Nikolina", company: "Company C"} } />
     </>
     ,
     <>
-      <TestimonialTemplate paragraph="lorem" user={ {image: "", name: "Ela", company: "Abc"} } />
-      <TestimonialTemplate paragraph="lorem" user={ {image: "", name: "Ela", company: "Abc"} } />
+      <TestimonialTemplate paragraph="lorem" user={ {image: "", name: "Ela", company: "Cars and bikes"} } />
+      <TestimonialTemplate paragraph="lorem" user={ {image: "", name: "Iva", company: "Qwert"} } />
     </>
     ,
     <>
-      <TestimonialTemplate paragraph="lorem" user={ {image: "", name: "Josip", company: "Abc"} } />
-      <TestimonialTemplate paragraph="lorem" user={ {image: "", name: "Josip", company: "Abc"} } />
+      <TestimonialTemplate paragraph="lorem" user={ {image: "", name: "Josip", company: "Media Z"} } />
+      <TestimonialTemplate paragraph="lorem" user={ {image: "", name: "Mislav", company: "Lorem Ip"} } />
     </>
   ];
 
