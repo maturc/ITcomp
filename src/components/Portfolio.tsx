@@ -6,7 +6,6 @@ import nightSky from '../assets/night-sky.jpg'
 import photographer from '../assets/photographer.jpg'
 import road from '../assets/road-from-above.jpg'
 import snorkeling from '../assets/woman-snorkeling.jpg'
-import { Button } from '@material-ui/core';
 
 function Portfolio() {
   return (
