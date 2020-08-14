@@ -1,18 +1,36 @@
 import React from 'react';
-import { Button } from '@material-ui/core';
+import BannerHalf from './components-small/BannerHalf';
+import snowBanner from '../assets/banner-half-snow.jpg'
+import H2AndParagraph from './components-small/H2AndParagraph';
 
 function About() {
   return (
     <div>
-      <h2>
-        About Us
-      </h2>
-      <p>
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam nobis repellat quae laborum voluptas nisi id? Maxime aut placeat quia rerum! Dolorum quia corrupti id corporis, esse accusamus quisquam porro?Illum ut iusto dolorem nesciunt ad at voluptatem quisquam maxime? Tenetur quam veniam laboriosam doloremque! Obcaecati dicta magnam doloremque ullam, in numquam unde fugit vel temporibus ipsum deleniti optio soluta?
-      </p>
-      <Button color="secondary">
-        Learn more
-      </Button>
+      <BannerHalf bannerText="About Us" bannerUrl={snowBanner}/>
+
+      <H2AndParagraph header="Our Work" paragraph="lorem"/>
+
+      <section>
+        <div>
+          icon
+          <h3>Some text</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          <img src="" alt="" />
+        </div>
+        <div>
+          icon
+          <h3>Some text</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          <img src="" alt="" />
+        </div>
+      </section>
+
+      <section>
+        <span>01</span>
+        <h3>Design</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, modi.</p>
+      </section>
+      
     </div>
   );
 }
