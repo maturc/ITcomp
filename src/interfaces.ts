@@ -9,7 +9,7 @@ export type ILearnMore = {
   src: string;
   alt?: string | undefined;
 }
-export type IH4AndP = {
+export type IHAndP = {
   header: string;
   paragraph: string;
 }
@@ -20,4 +20,8 @@ export type ITestimonialTemplate = {
     name: string;
     company: string;
   }
+}
+export type IBannerHalf = {
+  bannerText: string;
+  bannerUrl: string;
 }
