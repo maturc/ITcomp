@@ -4,7 +4,7 @@ import banner from '../../assets/banner-main-smaller.jpg'
 function Banner() {
   return (
     <div className="banner">
-      <img src={banner} alt="banner image" className="banner__image" />
+      <img src={banner} alt="banner" className="banner__image" />
     </div>
   );
 }
