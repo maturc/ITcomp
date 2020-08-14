@@ -18,6 +18,7 @@ $nav-bg-color: rgb(43, 44, 54)
 body
   font-family: 'Open Sans', sans-serif
   color: #2b2c36
+  overflow-x: hidden
 h2
   font-size: 4rem
 h4
@@ -27,6 +28,7 @@ p
 
 .navbar
   position: fixed
+  top: 0
   left: 0
   right: 0
   display: flex
@@ -36,6 +38,8 @@ p
   background-color: $nav-bg-color
   color: white
   z-index: 999
+  &__logo > img
+    height: 35px;
   &__links
     width: 33%
     display: flex
@@ -69,6 +73,7 @@ p
 .banner__image
   width: 100%
   max-height: 100vh
+  object-fit: cover
 .container
   width: 60%
   margin: 16px auto
@@ -171,7 +176,7 @@ p
 .testimonials__hide-overflow
   flex-grow: 1
   width: auto
-  background-color: white
+  background-color: #fafafa
   z-index: 10
   &-container
     display: flex

@@ -1,6 +1,7 @@
 body {
   font-family: 'Open Sans', sans-serif;
   color: #2b2c36;
+  overflow-x: hidden;
 }
 
 h2 {
@@ -17,6 +18,7 @@ p {
 
 .navbar {
   position: fixed;
+  top: 0;
   left: 0;
   right: 0;
   display: -webkit-box;
@@ -31,6 +33,10 @@ p {
   background-color: #2b2c36;
   color: white;
   z-index: 999;
+}
+
+.navbar__logo > img {
+  height: 35px;
 }
 
 .navbar__links {
@@ -90,6 +96,8 @@ p {
 .banner__image {
   width: 100%;
   max-height: 100vh;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .container {
@@ -380,7 +388,7 @@ p {
       -ms-flex-positive: 1;
           flex-grow: 1;
   width: auto;
-  background-color: white;
+  background-color: #fafafa;
   z-index: 10;
 }
 
