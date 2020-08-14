@@ -1,5 +1,5 @@
 import React from 'react';
-import NavMain from './components-small/Nav-main';
+import NavMain from './components-small/NavMain';
 
 function Footer() {
   return (
