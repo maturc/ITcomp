@@ -1,6 +1,7 @@
 import React from 'react';
 import { Button } from '@material-ui/core';
 import { ILearnMore } from '../../interfaces';
+import { Link } from 'react-router-dom';
 
 function LearnMore( {header, paragraph, button, src, alt}: ILearnMore ) {
   if(paragraph==="lorem")
@@ -15,9 +16,11 @@ function LearnMore( {header, paragraph, button, src, alt}: ILearnMore ) {
         <p>
           {paragraph}
         </p>
-        <Button color="secondary">
-          {button}
-        </Button>
+        <Link to="/about" className="buttons__container">
+          <Button disableRipple={true} color="secondary" className="buttons">
+            {button}
+          </Button>
+        </Link>
       </div>
       <div className="learn-more__image-container">
         <img src={src} alt={alt ? alt : ""} className="learn-more__image" />
