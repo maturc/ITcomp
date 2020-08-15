@@ -27,11 +27,6 @@ function NavMain( { classProp, setPlayDrawerAnimation, showCurrentRoute }: INav 
             About
           </li>
         </Link>
-        <Link to="/blog" onClick={handleClick}>
-          <li className={`${(showCurrentRoute && location.pathname==="/blog") && "navbar__current"}`} >
-            Blog
-          </li>
-        </Link>
         <Link to="/contact" onClick={handleClick}>
           <li className={`${(showCurrentRoute && location.pathname==="/contact") && "navbar__current"}`} >
             Contact
