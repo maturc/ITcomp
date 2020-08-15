@@ -18,7 +18,7 @@ function WhatWeDo() {
         </div>
         <div className="info">
           <ComputerIcon style={ {fontSize: `${iconSize}`, color: `${iconColor}`} } />
-          <H4AndParagraph header="Web development" paragraph="Do you need a web application? A single page application, a content managment system, an application with server side rendering, or something else? No matter your requirements, we will bring your ideas to life." />
+          <H4AndParagraph header="Web" paragraph="Do you need a web application? A single page application, a content managment system, an application with server side rendering, or something else? No matter your requirements, we will bring your ideas to life." />
         </div>
         <div className="info">
           <ViewQuiltIcon style={ {fontSize: `${iconSize}`, color: `${iconColor}`} } />
@@ -26,7 +26,7 @@ function WhatWeDo() {
         </div>
         <div className="info">
           <SmartphoneIcon style={ {fontSize: `${iconSize}`, color: `${iconColor}`} } />
-          <H4AndParagraph header="Mobile development" paragraph="Whether  you need a mobile application for your existing web application or a new one, our experienced team will make it happen." />
+          <H4AndParagraph header="Mobile" paragraph="Whether  you need a mobile application for your existing web application or a new one, our experienced team will make it happen." />
         </div>
       </div>
     </div>
