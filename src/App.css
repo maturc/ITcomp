@@ -110,7 +110,15 @@ p {
 }
 
 .navbar__links-aside {
-  display: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 40vh auto;
+  padding: 0;
 }
 
 .navbar__social {
@@ -148,6 +156,18 @@ p {
           transition-timing-function: ease-in;
 }
 
+@media only screen and (max-width: 750px) {
+  .banner {
+    margin-top: 20px;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  .banner {
+    margin-top: 50px;
+  }
+}
+
 .banner__image {
   width: 100%;
   max-height: 100vh;
@@ -163,6 +183,9 @@ p {
 @media only screen and (max-width: 600px) {
   .container {
     width: 100%;
+  }
+  .container > h2 {
+    margin-left: 32px;
   }
 }
 
