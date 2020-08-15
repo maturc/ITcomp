@@ -18,7 +18,7 @@ function WhatWeDo() {
         </div>
         <div className="info">
           <ComputerIcon style={ {fontSize: `${iconSize}`, color: `${iconColor}`} } />
-          <H4AndParagraph header="Web development" paragraph="Do you need a web application? A single page application, a content managment system, an application with server side rendering, or something else? No matter what your requirements are, we will bring your ideas to life." />
+          <H4AndParagraph header="Web development" paragraph="Do you need a web application? A single page application, a content managment system, an application with server side rendering, or something else? No matter your requirements, we will bring your ideas to life." />
         </div>
         <div className="info">
           <ViewQuiltIcon style={ {fontSize: `${iconSize}`, color: `${iconColor}`} } />
