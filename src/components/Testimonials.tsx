@@ -1,36 +1,47 @@
 import React, { useState, useEffect } from 'react';
 import TestimonialTemplate from './components-small/TestimonialTemplate';
-import { Button } from '@material-ui/core';
+import { Button, IconButton } from '@material-ui/core';
+import iva from '../assets/testimonials/iva.jpg';
+import ivan from '../assets/testimonials/ivan.jpg';
+import josip from '../assets/testimonials/josip.jpg';
+import julia from '../assets/testimonials/julia.jpg';
+import lori from '../assets/testimonials/lori.jpg';
+import marko from '../assets/testimonials/marko.jpg';
+import nikolina from '../assets/testimonials/nikolina.jpg';
+import tomislav from '../assets/testimonials/tomislav.jpg';
+import RadioButtonUncheckedIcon from '@material-ui/icons/RadioButtonUnchecked';
+import RadioButtonCheckedIcon from '@material-ui/icons/RadioButtonChecked';
+
+
 
 function Testimonials() {
   const [sliderIndex, setSliderIndex] = useState(0);
   const slides = [
     <>
-      <TestimonialTemplate paragraph="lorem" user={ {image: "", name: "Ivan", company: "Abc"} } />
-      <TestimonialTemplate paragraph="lorem" user={ {image: "", name: "Tomislav", company: "Company A"} } />
+      <TestimonialTemplate paragraph="I have used ITcomp's services multiple times and I can't recommend them enough." user={ {image: `${ivan}`, name: "Ivan", company: "Aqua design"} } />
+      <TestimonialTemplate paragraph="I am very impressed with how your team has worked with us." user={ {image: `${tomislav}`, name: "Tomislav", company: "Digital frontier"} } />
     </>
     ,
     <>
-      <TestimonialTemplate paragraph="lorem" user={ {image: "", name: "Marko", company: "Company B"} } />
-      <TestimonialTemplate paragraph="lorem" user={ {image: "", name: "Nikolina", company: "Company C"} } />
+      <TestimonialTemplate paragraph="Our latest project was a huge success thanks to the amazing team at ITcomp." user={ {image: `${marko}`, name: "Marko", company: "NCS"} } />
+      <TestimonialTemplate paragraph="I just wanted to recognize the two employees who talked with us, they did an amazing job." user={ {image: `${nikolina}`, name: "Nikolina", company: "ABC News"} } />
     </>
     ,
     <>
-      <TestimonialTemplate paragraph="lorem" user={ {image: "", name: "Ela", company: "Cars and bikes"} } />
-      <TestimonialTemplate paragraph="lorem" user={ {image: "", name: "Iva", company: "Qwert"} } />
+      <TestimonialTemplate paragraph="Excellent  service. I am looking forward to using your services again." user={ {image: `${julia}`, name: "Julia", company: "The Car Company"} } />
+      <TestimonialTemplate paragraph="Solid work. I am particularly impressed with the UX, great work." user={ {image: `${iva}`, name: "Iva", company: "Qwert"} } />
     </>
     ,
     <>
-      <TestimonialTemplate paragraph="lorem" user={ {image: "", name: "Josip", company: "Media Z"} } />
-      <TestimonialTemplate paragraph="lorem" user={ {image: "", name: "Mislav", company: "Lorem Ip"} } />
+      <TestimonialTemplate paragraph="This looks amazing. Great work on this project!! You guys always do wonderful work.”" user={ {image: `${josip}`, name: "Josip", company: "Media Z"} } />
+      <TestimonialTemplate paragraph="Lorem ipsum dolor sit amet consectetur adipisicing elit." user={ {image: `${lori}`, name: "Lori", company: "Lorem Ip"} } />
     </>
   ];
-
   useEffect(() => {
     const next = (sliderIndex + 1) % slides.length;
     const timeOutVar = setTimeout(() => {
       setSliderIndex(next);
-    }, 5000);
+    }, 3000);
     return () => { clearTimeout(timeOutVar) }
   }, [setSliderIndex, sliderIndex, slides]);
 
@@ -58,10 +69,23 @@ function Testimonials() {
         </div>
         <div className="testimonials__hide-overflow"></div>
       </div>
-      <Button onClick={ () => setSliderIndex(0) }>1</Button>
-      <Button onClick={ () => setSliderIndex(1) }>2</Button>
-      <Button onClick={ () => setSliderIndex(2) }>3</Button>
-      <Button onClick={ () => setSliderIndex(3) }>4</Button>
+      <div className="testimonials__button-container">
+        <Button disableRipple={true} onClick={ () => setSliderIndex(0) }>
+          { sliderIndex === 0 ? <RadioButtonCheckedIcon/> : <RadioButtonUncheckedIcon/> }
+        </Button>
+        <Button disableRipple={true} onClick={ () => setSliderIndex(1) }>
+          { sliderIndex === 1 ? <RadioButtonCheckedIcon/> : <RadioButtonUncheckedIcon/> }
+        </Button>
+        <Button disableRipple={true} onClick={ () => setSliderIndex(2) }>
+          { sliderIndex === 2 ? <RadioButtonCheckedIcon/> : <RadioButtonUncheckedIcon/> }
+        </Button>
+        <Button disableRipple={true} onClick={ () => setSliderIndex(3) }>
+          { sliderIndex === 3 ? <RadioButtonCheckedIcon/> : <RadioButtonUncheckedIcon/> }
+        </Button>
+      </div>
+
+
+
     </div>
   );
 }
