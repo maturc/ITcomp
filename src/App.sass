@@ -14,7 +14,7 @@ $hover-red: #ff2b58
     &:nth-child(3)
       grid-area: c
       &:hover::after
-        content: "Cloud storage"
+        content: "CMS"
     &:nth-child(4)
       grid-area: d
       &:hover::after
@@ -25,6 +25,7 @@ $hover-red: #ff2b58
         content: "Social media"
   .portfolio__button-container
     grid-area: f
+    height: 140px
 
 body
   font-family: 'Open Sans', sans-serif !important
@@ -170,6 +171,10 @@ p
 .info
   flex: 1 1 250px
   margin: 8px
+  @media only screen and (max-width: 1830px)
+    flex-basis: 40%
+  @media only screen and (max-width: 1370px)
+    flex-basis: 250px
   &__container
     display: flex
     flex-wrap: wrap
@@ -180,8 +185,7 @@ p
       flex-direction: column
       margin: 120px 16px
   & > h4
-    height: 85px
-
+    
 //PORTFOLIO
 .portfolio
   @include grid-areas
@@ -310,6 +314,17 @@ p
 .MuiButton-root:hover
   background-color: unset !important
 
+//CONTACT
+.contact-home
+  height: 400px
+  background-color: $hover-red
+  display: flex
+  flex-direction: column
+  justify-content: center
+  align-items: center
+  color: white
+  text-align: center
+
 //FOOTER
 .footer
   display: flex
@@ -338,6 +353,28 @@ p
       font-size: 1rem
   &__credits
     display: flex
+
+//BUTTONS
+.buttons
+  &__container
+    width: max-content
+    margin: 8px 0
+  padding: 12px 24px !important
+  //width: 100% !important
+  border: 1px solid $hover-red !important
+  border-radius: 0 !important
+  color: $hover-red !important
+  font-size: 1rem !important
+  font-weight: bold !important
+  &:hover
+    background-color: $hover-red !important
+    color: white !important
+  &-white
+    border-color: white !important
+    color: white !important
+    &:hover
+      background-color: white !important
+      color: black !important
 
 //KEYFRAMES
 @keyframes drawer-enter

@@ -15,7 +15,7 @@ function PortfolioHome() {
       <a href="/portfolio/server" style={ {backgroundImage: `url(${server})`   } }>{""}</a>
       <a href="/portfolio/galery" style={ {backgroundImage: `url(${galery})`   } }>{""}</a>
       <a href="/portfolio/chat"   style={ {backgroundImage: `url(${chat})`     } }>{""}</a>
-      <div className="portfolio__button-container" style={{backgroundImage: `url(${buttonBackground})`}}><Button color="secondary">More projects</Button></div>
+      <div className="portfolio__button-container" style={{backgroundImage: `url(${buttonBackground})`}}><Button disableRipple={true} color="secondary" className="buttons buttons-white">More projects</Button></div>
     </div>
   );
 }
