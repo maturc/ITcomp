@@ -10,11 +10,11 @@ import buttonBackground from '../assets/portfolio-button-background.jpg'
 function PortfolioHome() {
   return (
     <div className="portfolio">
-      <a href="/portfolio/trafic" style={{backgroundImage: `url(${graphs})`}}>{""}</a>
-      <a href="/portfolio/mobile" style={{backgroundImage: `url(${mobileApp})`}}>{""}</a>
-      <a href="/portfolio/server" style={{backgroundImage: `url(${server})`}}>{""}</a>
-      <a href="/portfolio/galery" style={{backgroundImage: `url(${galery})`}}>{""}</a>
-      <a href="/portfolio/chat"   style={{backgroundImage: `url(${chat})`}}>{""}</a>
+      <a href="/portfolio/trafic" style={ {backgroundImage: `url(${graphs})`   } }>{""}</a>
+      <a href="/portfolio/mobile" style={ {backgroundImage: `url(${mobileApp})`} }>{""}</a>
+      <a href="/portfolio/server" style={ {backgroundImage: `url(${server})`   } }>{""}</a>
+      <a href="/portfolio/galery" style={ {backgroundImage: `url(${galery})`   } }>{""}</a>
+      <a href="/portfolio/chat"   style={ {backgroundImage: `url(${chat})`     } }>{""}</a>
       <div className="portfolio__button-container" style={{backgroundImage: `url(${buttonBackground})`}}><Button color="secondary">More projects</Button></div>
     </div>
   );
