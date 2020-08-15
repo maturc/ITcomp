@@ -5,6 +5,7 @@ import WhatWeDo from './components-small/WhatWeDo';
 import PortfolioHome from './PortfolioHome';
 import Testimonials from './Testimonials';
 import aboutUs from '../assets/about-us.jpg';
+import ContactHome from './components-small/ContactHome';
 
 function Home() {
   const aboutUsParagraph = `We are a full-service creative agency specializing in custom web design, web development, mobile development, UI/UX, and software development.`
@@ -18,6 +19,7 @@ function Home() {
       </div>
       <PortfolioHome />
       <Testimonials />
+      <ContactHome />
     </div>
   );
 }
