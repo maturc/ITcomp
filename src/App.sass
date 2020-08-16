@@ -26,20 +26,63 @@ $hover-red: #ff2b58
   .portfolio__button-container
     grid-area: f
     height: 140px
-
+@mixin grid-areas-main
+  > a
+    &:nth-child(1)
+      grid-area: a
+      &:hover::after
+        content: "Traffic analysis tool"
+    &:nth-child(2)
+      grid-area: b
+      &:hover::after
+        content: "Pic Share"
+    &:nth-child(3)
+      grid-area: c
+      &:hover::after
+        content: "CMS"
+    &:nth-child(4)
+      grid-area: d
+      &:hover::after
+        content: "Galery app"
+    &:nth-child(5)
+      grid-area: e
+      &:hover::after
+        content: "Social media"
+    &:nth-child(6)
+      grid-area: f
+      &:hover::after
+        content: "News app"
+    &:nth-child(7)
+      grid-area: g
+      &:hover::after
+        content: "Banking app"
+    &:nth-child(8)
+      grid-area: h
+      &:hover::after
+        content: "E-Comerce"
+html
+  scrollbar-width: thin
 body
   font-family: 'Open Sans', sans-serif !important
   color: #2b2c36
   overflow-x: hidden
+h1
+  font-size: 4.4rem
+  font-weight: 300
+  text-transform: uppercase
 h2
   font-size: 4rem
   margin: 0
+  margin-bottom: 16px
+h3
+  font-size: 2.5rem
   margin-bottom: 16px
 h4
   font-size: 1.8rem
   margin: 24px 0
 p
   font-size: 1rem
+  white-space: pre-line
 
 //NAVBAR
 .navbar__logo + .navbar__links
@@ -135,6 +178,17 @@ p
     width: 100%
     & > h2
       margin-left:  32px
+//HALF BANNER
+.banner__half
+  height: 360px
+  display: flex
+  justify-content: center
+  align-items: center
+  color: white
+  font-weight: normal
+  > *
+    margin-top: 100px
+    text-shadow: 1px 1px 8px #0000005c
 
 //LEARN MORE
 .learn-more
@@ -228,12 +282,29 @@ p
       text-align: center
       text-shadow: 1px 2px 1px black
   &__button-container
-    background-size: cover
     height: 100px
     display: flex
     justify-content: center
     align-items: center
-  
+    background-size: cover
+    background-attachment: fixed
+    background-position: center
+//PORTFOLIO MAIN
+.portfolio__main
+  margin: 0
+  @include grid-areas-main
+  grid-template: 350px 350px 350px / 1fr 1fr 1fr
+  grid-template-areas: "a b c" "d e c" "f g h"
+  @media only screen and (max-width: 900px)
+    @include grid-areas-main
+    grid-template: 350px 350px 350px 350px 350px / 1fr 1fr
+    grid-template-areas: "a b" "c d" "c e" "f g" "h h"
+  @media only screen and (max-width: 600px)
+    @include grid-areas-main
+    //grid-template: repeat(auto-fit, minmax(300px,1fr))
+    grid-template: repeat(9, 350px) / 1fr
+    grid-template-areas: "a" "b" "c" "c" "d" "e" "f" "g" "h"
+
 //TESTIMONIALS
 .testimonials__hide-overflow
   flex-grow: 1
@@ -359,8 +430,8 @@ p
   &__container
     width: max-content
     margin: 8px 0
+    text-decoration: none
   padding: 12px 24px !important
-  //width: 100% !important
   border: 1px solid $hover-red !important
   border-radius: 0 !important
   color: $hover-red !important
@@ -375,6 +446,113 @@ p
     &:hover
       background-color: white !important
       color: black !important
+
+//ABOUT
+.about
+  &__h3p
+    display: flex
+    direction: row
+    flex-wrap: wrap
+    justify-content: flex-start
+    align-items: center
+    margin: 16px 0
+    & > *
+      flex: 1 1 50%
+    &-inner
+      margin-left: 16px
+  &__text-block
+    display: flex
+    flex-direction: row
+    justify-content: center
+    align-items: center
+    padding: 16px
+  &__image
+    max-height: 300px
+    min-width: 200px
+    object-fit: cover
+    padding: 16px
+.about__h3p + .about__h3p
+  flex-direction: row-reverse
+.about__ordered
+  line-height: 1
+  &-outer
+    margin-top: 120px
+    display: flex
+    flex-direction: row
+    justify-content: center
+    align-items: center
+    flex-wrap: wrap
+    padding: 8rem 2.5rem
+    color: white
+    background-image: url("./assets/about/meeting.jpg")
+    background-size: cover
+    background-attachment: fixed
+    background-position: center
+    @media only screen and (max-width: 1130px)
+      flex-direction: column
+    & > div
+      padding: 16px
+      flex: 1 1 350px
+      @media only screen and (max-width: 1130px)
+        flex-basis: 200px
+      & > p
+        word-break: normal
+
+//CONTACT US
+.contact
+  &__h2
+    margin-bottom: 0
+    margin-top: 40px
+  &__info
+    display: flex
+    flex-direction: row
+    justify-content: flex-start
+    align-items: center
+    padding: 0 16px 0
+    & > h4
+      padding-left: 16px
+  &__main
+    display: flex
+    justify-content: center
+    align-items: center
+    flex-wrap: wrap
+    margin-bottom: 120px
+    & > *
+      flex: 1 1 50%
+  &__form
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    padding: 16px
+  &__user
+    display: flex
+    justify-content: center
+    align-items: center
+    flex-direction: row
+    width: 100%
+    flex-wrap: wrap
+    padding: 0 4px
+    @media only screen and (max-width: 400px)
+      flex-direction: column
+      & > *
+        width: 100%
+    & > *
+      padding: 0 4px !important
+      flex: 1 1 50%
+  &__message
+    padding: 8px
+    width: 100%
+    & > *
+      width: 100%
+  &__button
+    margin-top: 8px !important
+    background-color: $hover-red !important
+    color: white !important
+    &:hover
+      background-color: white !important
+      color: $hover-red !important
+
 
 //KEYFRAMES
 @keyframes drawer-enter

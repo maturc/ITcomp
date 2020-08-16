@@ -1,12 +1,27 @@
+html {
+  scrollbar-width: thin;
+}
+
 body {
   font-family: 'Open Sans', sans-serif !important;
   color: #2b2c36;
   overflow-x: hidden;
 }
 
+h1 {
+  font-size: 4.4rem;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
 h2 {
   font-size: 4rem;
   margin: 0;
+  margin-bottom: 16px;
+}
+
+h3 {
+  font-size: 2.5rem;
   margin-bottom: 16px;
 }
 
@@ -17,6 +32,7 @@ h4 {
 
 p {
   font-size: 1rem;
+  white-space: pre-line;
 }
 
 .navbar__logo + .navbar__links {
@@ -187,6 +203,26 @@ p {
   .container > h2 {
     margin-left: 32px;
   }
+}
+
+.banner__half {
+  height: 360px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+  font-weight: normal;
+}
+
+.banner__half > * {
+  margin-top: 100px;
+  text-shadow: 1px 1px 8px #0000005c;
 }
 
 .learn-more {
@@ -369,7 +405,6 @@ p {
 .portfolio .portfolio__button-container {
   -ms-grid-row: 3;
   -ms-grid-column: 1;
-  -ms-grid-column-span: 3;
   grid-area: f;
   height: 140px;
 }
@@ -398,9 +433,9 @@ p {
     content: "Pic Share";
   }
   .portfolio > a:nth-child(3) {
-    -ms-grid-row: 2;
+    -ms-grid-row: 1;
     -ms-grid-row-span: 2;
-    -ms-grid-column: 1;
+    -ms-grid-column: 3;
     grid-area: c;
   }
   .portfolio > a:nth-child(3):hover::after {
@@ -408,14 +443,14 @@ p {
   }
   .portfolio > a:nth-child(4) {
     -ms-grid-row: 2;
-    -ms-grid-column: 2;
+    -ms-grid-column: 1;
     grid-area: d;
   }
   .portfolio > a:nth-child(4):hover::after {
     content: "Galery app";
   }
   .portfolio > a:nth-child(5) {
-    -ms-grid-row: 3;
+    -ms-grid-row: 2;
     -ms-grid-column: 2;
     grid-area: e;
   }
@@ -423,9 +458,8 @@ p {
     content: "Social media";
   }
   .portfolio .portfolio__button-container {
-    -ms-grid-row: 4;
+    -ms-grid-row: 3;
     -ms-grid-column: 1;
-    -ms-grid-column-span: 2;
     grid-area: f;
     height: 140px;
   }
@@ -447,24 +481,24 @@ p {
     content: "Traffic analysis tool";
   }
   .portfolio > a:nth-child(2) {
-    -ms-grid-row: 2;
-    -ms-grid-column: 1;
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
     grid-area: b;
   }
   .portfolio > a:nth-child(2):hover::after {
     content: "Pic Share";
   }
   .portfolio > a:nth-child(3) {
-    -ms-grid-row: 3;
+    -ms-grid-row: 1;
     -ms-grid-row-span: 2;
-    -ms-grid-column: 1;
+    -ms-grid-column: 3;
     grid-area: c;
   }
   .portfolio > a:nth-child(3):hover::after {
     content: "CMS";
   }
   .portfolio > a:nth-child(4) {
-    -ms-grid-row: 5;
+    -ms-grid-row: 2;
     -ms-grid-column: 1;
     grid-area: d;
   }
@@ -472,15 +506,15 @@ p {
     content: "Galery app";
   }
   .portfolio > a:nth-child(5) {
-    -ms-grid-row: 6;
-    -ms-grid-column: 1;
+    -ms-grid-row: 2;
+    -ms-grid-column: 2;
     grid-area: e;
   }
   .portfolio > a:nth-child(5):hover::after {
     content: "Social media";
   }
   .portfolio .portfolio__button-container {
-    -ms-grid-row: 7;
+    -ms-grid-row: 3;
     -ms-grid-column: 1;
     grid-area: f;
     height: 140px;
@@ -519,7 +553,6 @@ p {
 }
 
 .portfolio__button-container {
-  background-size: cover;
   height: 100px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -530,6 +563,247 @@ p {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+.portfolio__main {
+  margin: 0;
+  -ms-grid-rows: 350px 350px 350px;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template: 350px 350px 350px / 1fr 1fr 1fr;
+      grid-template-areas: "a b c" "d e c" "f g h";
+}
+
+.portfolio__main > a:nth-child(1) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: a;
+}
+
+.portfolio__main > a:nth-child(1):hover::after {
+  content: "Traffic analysis tool";
+}
+
+.portfolio__main > a:nth-child(2) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: b;
+}
+
+.portfolio__main > a:nth-child(2):hover::after {
+  content: "Pic Share";
+}
+
+.portfolio__main > a:nth-child(3) {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 3;
+  grid-area: c;
+}
+
+.portfolio__main > a:nth-child(3):hover::after {
+  content: "CMS";
+}
+
+.portfolio__main > a:nth-child(4) {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: d;
+}
+
+.portfolio__main > a:nth-child(4):hover::after {
+  content: "Galery app";
+}
+
+.portfolio__main > a:nth-child(5) {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: e;
+}
+
+.portfolio__main > a:nth-child(5):hover::after {
+  content: "Social media";
+}
+
+.portfolio__main > a:nth-child(6) {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: f;
+}
+
+.portfolio__main > a:nth-child(6):hover::after {
+  content: "News app";
+}
+
+.portfolio__main > a:nth-child(7) {
+  -ms-grid-row: 3;
+  -ms-grid-column: 2;
+  grid-area: g;
+}
+
+.portfolio__main > a:nth-child(7):hover::after {
+  content: "Banking app";
+}
+
+.portfolio__main > a:nth-child(8) {
+  -ms-grid-row: 3;
+  -ms-grid-column: 3;
+  grid-area: h;
+}
+
+.portfolio__main > a:nth-child(8):hover::after {
+  content: "E-Comerce";
+}
+
+@media only screen and (max-width: 900px) {
+  .portfolio__main {
+    -ms-grid-rows: 350px 350px 350px 350px 350px;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template: 350px 350px 350px 350px 350px / 1fr 1fr;
+        grid-template-areas: "a b" "c d" "c e" "f g" "h h";
+  }
+  .portfolio__main > a:nth-child(1) {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    grid-area: a;
+  }
+  .portfolio__main > a:nth-child(1):hover::after {
+    content: "Traffic analysis tool";
+  }
+  .portfolio__main > a:nth-child(2) {
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+    grid-area: b;
+  }
+  .portfolio__main > a:nth-child(2):hover::after {
+    content: "Pic Share";
+  }
+  .portfolio__main > a:nth-child(3) {
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 2;
+    -ms-grid-column: 1;
+    grid-area: c;
+  }
+  .portfolio__main > a:nth-child(3):hover::after {
+    content: "CMS";
+  }
+  .portfolio__main > a:nth-child(4) {
+    -ms-grid-row: 2;
+    -ms-grid-column: 2;
+    grid-area: d;
+  }
+  .portfolio__main > a:nth-child(4):hover::after {
+    content: "Galery app";
+  }
+  .portfolio__main > a:nth-child(5) {
+    -ms-grid-row: 3;
+    -ms-grid-column: 2;
+    grid-area: e;
+  }
+  .portfolio__main > a:nth-child(5):hover::after {
+    content: "Social media";
+  }
+  .portfolio__main > a:nth-child(6) {
+    -ms-grid-row: 4;
+    -ms-grid-column: 1;
+    grid-area: f;
+  }
+  .portfolio__main > a:nth-child(6):hover::after {
+    content: "News app";
+  }
+  .portfolio__main > a:nth-child(7) {
+    -ms-grid-row: 4;
+    -ms-grid-column: 2;
+    grid-area: g;
+  }
+  .portfolio__main > a:nth-child(7):hover::after {
+    content: "Banking app";
+  }
+  .portfolio__main > a:nth-child(8) {
+    -ms-grid-row: 5;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-area: h;
+  }
+  .portfolio__main > a:nth-child(8):hover::after {
+    content: "E-Comerce";
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .portfolio__main {
+    -ms-grid-rows: (350px)[9];
+    -ms-grid-columns: 1fr;
+        grid-template: repeat(9, 350px)/1fr;
+        grid-template-areas: "a" "b" "c" "c" "d" "e" "f" "g" "h";
+  }
+  .portfolio__main > a:nth-child(1) {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    grid-area: a;
+  }
+  .portfolio__main > a:nth-child(1):hover::after {
+    content: "Traffic analysis tool";
+  }
+  .portfolio__main > a:nth-child(2) {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    grid-area: b;
+  }
+  .portfolio__main > a:nth-child(2):hover::after {
+    content: "Pic Share";
+  }
+  .portfolio__main > a:nth-child(3) {
+    -ms-grid-row: 3;
+    -ms-grid-row-span: 2;
+    -ms-grid-column: 1;
+    grid-area: c;
+  }
+  .portfolio__main > a:nth-child(3):hover::after {
+    content: "CMS";
+  }
+  .portfolio__main > a:nth-child(4) {
+    -ms-grid-row: 5;
+    -ms-grid-column: 1;
+    grid-area: d;
+  }
+  .portfolio__main > a:nth-child(4):hover::after {
+    content: "Galery app";
+  }
+  .portfolio__main > a:nth-child(5) {
+    -ms-grid-row: 6;
+    -ms-grid-column: 1;
+    grid-area: e;
+  }
+  .portfolio__main > a:nth-child(5):hover::after {
+    content: "Social media";
+  }
+  .portfolio__main > a:nth-child(6) {
+    -ms-grid-row: 7;
+    -ms-grid-column: 1;
+    grid-area: f;
+  }
+  .portfolio__main > a:nth-child(6):hover::after {
+    content: "News app";
+  }
+  .portfolio__main > a:nth-child(7) {
+    -ms-grid-row: 8;
+    -ms-grid-column: 1;
+    grid-area: g;
+  }
+  .portfolio__main > a:nth-child(7):hover::after {
+    content: "Banking app";
+  }
+  .portfolio__main > a:nth-child(8) {
+    -ms-grid-row: 9;
+    -ms-grid-column: 1;
+    grid-area: h;
+  }
+  .portfolio__main > a:nth-child(8):hover::after {
+    content: "E-Comerce";
+  }
 }
 
 .testimonials__hide-overflow {
@@ -813,6 +1087,7 @@ p {
   width: -moz-max-content;
   width: max-content;
   margin: 8px 0;
+  text-decoration: none;
 }
 
 .buttons:hover {
@@ -828,6 +1103,243 @@ p {
 .buttons-white:hover {
   background-color: white !important;
   color: black !important;
+}
+
+.about__h3p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 16px 0;
+}
+
+.about__h3p > * {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 50%;
+          flex: 1 1 50%;
+}
+
+.about__h3p-inner {
+  margin-left: 16px;
+}
+
+.about__text-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 16px;
+}
+
+.about__image {
+  max-height: 300px;
+  min-width: 200px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  padding: 16px;
+}
+
+.about__h3p + .about__h3p {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+
+.about__ordered {
+  line-height: 1;
+}
+
+.about__ordered-outer {
+  margin-top: 120px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 8rem 2.5rem;
+  color: white;
+  background-image: url("./assets/about/meeting.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+@media only screen and (max-width: 1130px) {
+  .about__ordered-outer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.about__ordered-outer > div {
+  padding: 16px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 350px;
+          flex: 1 1 350px;
+}
+
+@media only screen and (max-width: 1130px) {
+  .about__ordered-outer > div {
+    -ms-flex-preferred-size: 200px;
+        flex-basis: 200px;
+  }
+}
+
+.about__ordered-outer > div > p {
+  word-break: normal;
+}
+
+.contact__h2 {
+  margin-bottom: 0;
+  margin-top: 40px;
+}
+
+.contact__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 16px 0;
+}
+
+.contact__info > h4 {
+  padding-left: 16px;
+}
+
+.contact__main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-bottom: 120px;
+}
+
+.contact__main > * {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 50%;
+          flex: 1 1 50%;
+}
+
+.contact__form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 16px;
+}
+
+.contact__user {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 100%;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+@media only screen and (max-width: 400px) {
+  .contact__user {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .contact__user > * {
+    width: 100%;
+  }
+}
+
+.contact__user > * {
+  padding: 0 4px !important;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 50%;
+          flex: 1 1 50%;
+}
+
+.contact__message {
+  padding: 8px;
+  width: 100%;
+}
+
+.contact__message > * {
+  width: 100%;
+}
+
+.contact__button {
+  margin-top: 8px !important;
+  background-color: #ff2b58 !important;
+  color: white !important;
+}
+
+.contact__button:hover {
+  background-color: white !important;
+  color: #ff2b58 !important;
 }
 
 @-webkit-keyframes drawer-enter {
