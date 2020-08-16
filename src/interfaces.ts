@@ -26,3 +26,13 @@ export type IBannerHalf = {
   bannerText: string;
   bannerUrl: string;
 }
+export type IH2PI = {
+  header: string;
+  paragraph: string;
+  src: string;
+  alt?: string | undefined;
+}
+export type IOrderedRows = {
+  headers: Array<string>;
+  paragraphs: Array<string>;
+}
