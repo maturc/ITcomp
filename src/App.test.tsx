@@ -10,4 +10,5 @@ test('Do all components inside home get rendered?', () => {
   getByText("More projects");
   getByText("User reviews");
   getByText("Created by Matija Turčec");
+  getByText("Want to work with us?");
 });
