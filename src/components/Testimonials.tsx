@@ -12,8 +12,6 @@ import tomislav from '../assets/testimonials/tomislav.jpg';
 import RadioButtonUncheckedIcon from '@material-ui/icons/RadioButtonUnchecked';
 import RadioButtonCheckedIcon from '@material-ui/icons/RadioButtonChecked';
 
-
-
 function Testimonials() {
   const [sliderIndex, setSliderIndex] = useState(0);
   const slides = [
@@ -83,9 +81,6 @@ function Testimonials() {
           { sliderIndex === 3 ? <RadioButtonCheckedIcon/> : <RadioButtonUncheckedIcon/> }
         </Button>
       </div>
-
-
-
     </div>
   );
 }
