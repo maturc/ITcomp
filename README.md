@@ -1,5 +1,5 @@
 # ITcomp
-A tech company website
+Portofolio project - tech company website
 
 ## [Link to website](Placeholder)
 
