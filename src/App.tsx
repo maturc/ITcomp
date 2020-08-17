@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Switch, Route, Redirect } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Home from './components/Home';
 import About from './components/About';
@@ -38,6 +38,7 @@ function App() {
           <Route path="/portfolio/e-comerce"   exact component={Ecomerce} />
 
           <Route path="/contact"   exact component={Contact} />
+          <Redirect from="/*" to="/" />
         </Switch>
         <Footer />
       </div>
