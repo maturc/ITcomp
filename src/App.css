@@ -8,6 +8,11 @@ body {
   overflow-x: hidden;
 }
 
+html, body {
+  overflow-x: hidden;
+  width: 100%;
+}
+
 h1 {
   font-size: 4.4rem;
   font-weight: 300;
