@@ -13,7 +13,7 @@ function Contact() {
   return (
     <div className="contact">
       <BannerHalf bannerText="Contact" bannerUrl={contact} />
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2689.2893592743794!2d-122.35146608396607!3d47.620506279185506!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5490151f4ed5b7f9%3A0xdb2ba8689ed0920d!2sSpace%20Needle!5e0!3m2!1shr!2shr!4v1597591901495!5m2!1shr!2shr" width="100%" height="450" style={{border:"0"}} aria-hidden="false"></iframe>
+      <iframe title="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2689.2893592743794!2d-122.35146608396607!3d47.620506279185506!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5490151f4ed5b7f9%3A0xdb2ba8689ed0920d!2sSpace%20Needle!5e0!3m2!1shr!2shr!4v1597591901495!5m2!1shr!2shr" width="100%" height="450" style={{border:"0"}} aria-hidden="false"></iframe>
       <div className="container" style={{margin: "0 auto"}}>
         <h2 className="contact__h2">Contact Us</h2>
         <div className="contact__main">

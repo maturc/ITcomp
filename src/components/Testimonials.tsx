@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import TestimonialTemplate from './components-small/TestimonialTemplate';
-import { Button, IconButton } from '@material-ui/core';
+import { Button } from '@material-ui/core';
 import iva from '../assets/testimonials/iva.jpg';
 import ivan from '../assets/testimonials/ivan.jpg';
 import josip from '../assets/testimonials/josip.jpg';
