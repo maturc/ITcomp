@@ -6,8 +6,10 @@ import RoomIcon from '@material-ui/icons/Room';
 import PhoneIcon from '@material-ui/icons/Phone';
 import EmailIcon from '@material-ui/icons/Email';
 import { TextField, Button } from '@material-ui/core';
+import useScroll from './useScroll';
 
 function Contact() {
+  useScroll();
   const iconSize = "4rem";
   const iconColor = "#ff2b58"
   return (

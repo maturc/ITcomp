@@ -9,8 +9,10 @@ import news from '../assets/news.jpg';
 import banking from '../assets/banking.jpg';
 import eComerce from '../assets/e-comerce.jpg';
 import BannerHalf from './components-small/BannerHalf';
+import useScroll from './useScroll';
 
 function Portfolio() {
+  useScroll();
   return (
     <>
       <BannerHalf bannerText="Portfolio" bannerUrl={portfolio} />
