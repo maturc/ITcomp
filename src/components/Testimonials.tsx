@@ -22,7 +22,7 @@ function Testimonials() {
     ,
     <>
       <TestimonialTemplate paragraph="Our latest project was a huge success thanks to the amazing team at ITcomp." user={ {image: `${marko}`, name: "Marko", company: "NCS"} } />
-      <TestimonialTemplate paragraph="I just wanted to recognize the two employees who talked with us, they did an amazing job." user={ {image: `${nikolina}`, name: "Nikolina", company: "ABC News"} } />
+      <TestimonialTemplate paragraph="I just wanted to recognize the two employees who talked with us, amazing team." user={ {image: `${nikolina}`, name: "Nikolina", company: "ABC News"} } />
     </>
     ,
     <>
