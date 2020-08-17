@@ -36,3 +36,9 @@ export type IOrderedRows = {
   headers: Array<string>;
   paragraphs: Array<string>;
 }
+export type IPortfolioDetailes = {
+  projectName: string;
+  projectDescription: string;
+  projectImage: string;
+  projectImageAlt: string;
+}
