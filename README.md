@@ -1,7 +1,7 @@
 # ITcomp
 Portofolio project - tech company website
 
-## [Link to website](Placeholder)
+## [Link to website](http://maturc.github.io/ITcomp)
 
 ## Technologies used:
 + react
