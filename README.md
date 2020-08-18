@@ -12,7 +12,6 @@ Portofolio project - tech company website
 + jest
 
 ## Preview
-#### Preview
 ![landing](https://github.com/maturc/ITcomp/blob/master/preview/landing.png)
 ![what](https://github.com/maturc/ITcomp/blob/master/preview/what.png)
 ![portfolio](https://github.com/maturc/ITcomp/blob/master/preview/portfolio.jpg)
