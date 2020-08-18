@@ -9,21 +9,21 @@ Portofolio project - tech company website
 + typescript
 + material ui - only for utility and forms
 + sass
++ jest
 
-PLACEHOLDERS
-## Features
-#### Sending messages to different channels
-![sending messages](https://github.com/maturc/lavander/blob/master/preview/full-view.png)
-#### User authentiucation with the help of bcrypt
-![user authentication](https://github.com/maturc/lavander/blob/master/preview/authentication.png)
-#### Real time communication with sockets
-![socket communication](https://github.com/maturc/slack-clone/blob/master/preview/socket-communication.gif "socket communication")
-#### Image embeds and inspection
-![image embeding](https://github.com/maturc/lavander/blob/master/preview/embed.jpeg)
-#### Link highlighting
-![link highlighting](https://github.com/maturc/lavander/blob/master/preview/link-highlighting.png)
+## Preview
+#### Preview
+![landing](https://github.com/maturc/ITcomp/blob/master/preview/landing.png)
+![what](https://github.com/maturc/ITcomp/blob/master/preview/what.png)
+![portfolio](https://github.com/maturc/ITcomp/blob/master/preview/portfolio.jpg)
+![testimonials](https://github.com/maturc/ITcomp/blob/master/preview/testimonials.png)
+![contact](https://github.com/maturc/ITcomp/blob/master/preview/contact.png)
+![about](https://github.com/maturc/ITcomp/blob/master/preview/about.png)
+![project](https://github.com/maturc/ITcomp/blob/master/preview/project.png)
 #### Responsive design
-![responsive design](https://github.com/maturc/lavander/blob/master/preview/responsive-design.png)
+![responsive-landing](https://github.com/maturc/ITcomp/blob/master/preview/responsive-landing.png)
+![responsive-menu](https://github.com/maturc/ITcomp/blob/master/preview/responsive-menu.png)
+![responsive-about](https://github.com/maturc/ITcomp/blob/master/preview/responsive-about.png)
 
 ##### How to start the application:
  * Clone this repository
