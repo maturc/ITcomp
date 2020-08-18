@@ -11,11 +11,11 @@ import { Link } from 'react-router-dom';
 function PortfolioHome() {
   return (
     <div className="portfolio">
-      <a href="/portfolio/traffic" style={ {backgroundImage: `url(${graphs})`   } }>{""}</a>
-      <a href="/portfolio/mobile"  style={ {backgroundImage: `url(${mobileApp})`} }>{""}</a>
-      <a href="/portfolio/server"  style={ {backgroundImage: `url(${server})`   } }>{""}</a>
-      <a href="/portfolio/galery"  style={ {backgroundImage: `url(${galery})`   } }>{""}</a>
-      <a href="/portfolio/chat"    style={ {backgroundImage: `url(${chat})`     } }>{""}</a>
+      <Link to="/portfolio/traffic" style={ {backgroundImage: `url(${graphs})`   } }>{""}</Link>
+      <Link to="/portfolio/mobile"  style={ {backgroundImage: `url(${mobileApp})`} }>{""}</Link>
+      <Link to="/portfolio/server"  style={ {backgroundImage: `url(${server})`   } }>{""}</Link>
+      <Link to="/portfolio/galery"  style={ {backgroundImage: `url(${galery})`   } }>{""}</Link>
+      <Link to="/portfolio/chat"    style={ {backgroundImage: `url(${chat})`     } }>{""}</Link>
       <div className="portfolio__button-container" style={{backgroundImage: `url(${buttonBackground})`}}>
         <Link to="/portfolio" className="buttons__container">
           <Button disableRipple={true} color="secondary" className="buttons buttons-white">More projects</Button>
